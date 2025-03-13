@@ -7,7 +7,7 @@ interface TextProps {
 
 
 export const HeroText: FC<TextProps> = ({style = "primary", children}) => {
-	return <h1 className={`text-7xl font-bold uppercase text-${style}`}>{children}</h1>;
+	return <h1 className={`text-7xl bg-red-300 font-bold uppercase text-${style}`}>{children}</h1>;
 }
 
 
