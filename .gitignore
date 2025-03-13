@@ -1,1 +1,4 @@
 /atom-ui/node_modules/
+/atom-ui/dist/
+/node_modules/
+/atom-doc/node_modules/
