@@ -1,4 +1,4 @@
 import '@/global.css';
 
-export {HeroText} from '@/components/text/hero'
+export * from '@/components/text';
 
