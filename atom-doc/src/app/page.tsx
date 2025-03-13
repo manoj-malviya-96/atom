@@ -3,7 +3,7 @@ import {HeroText} from "atom-ui";
 export default function Home() {
 	return (
 		<div className="flex items-center justify-center h-screen">
-			<HeroText style="accent">Welcome to Atom</HeroText>
+			<HeroText>Welcome to Atom</HeroText>
 		</div>
 	);
 }
