@@ -6,7 +6,6 @@ interface ColProps extends HTMLAttributes<HTMLDivElement> {
 	spacing?: Spacing;
 	horizontalAlignment?: HorizontalAlignment;
 	verticalAlignment?: VerticalAlignment;
-	className?: string;
 }
 
 export const Col: React.FC<ColProps> = React.memo(

@@ -6,7 +6,6 @@ interface RowProps extends HTMLAttributes<HTMLDivElement> {
 	spacing: Spacing;
 	horizontalAlignment: HorizontalAlignment;
 	verticalAlignment: VerticalAlignment;
-	className?: string;
 	smallDeviceWrap: "none" | "col" | "wrap"; //! If small device, make it column
 }
 
