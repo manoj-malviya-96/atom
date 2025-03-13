@@ -1,5 +1,16 @@
 {
   "name": "atom-monorepo",
   "private": true,
-  "workspaces": ["atom-ui", "atom-doc"]
+  "workspaces": [
+    "atom-ui",
+    "atom-doc"
+  ],
+  "scripts": {
+    "dev": "npm-run-all -p dev:ui dev:doc",
+    "dev:ui": "npm --workspace atom-ui run dev",
+    "dev:doc": "npm --workspace atom-doc run dev"
+  },
+  "devDependencies": {
+    "npm-run-all": "^4.1.5"
+  }
 }
