@@ -16,6 +16,18 @@
       "style": "./dist/index.css",
       "require": "./dist/index.js",
       "import": "./dist/index.mjs"
+    },
+    "./layout": {
+      "types": "./dist/components/layout/index.d.ts",
+      "style": "./dist/components/layout/index.css",
+      "require": "./dist/components/layout/index.js",
+      "import": "./dist/components/layout/index.mjs"
+    },
+    "./text": {
+      "types": "./dist/components/text/index.d.ts",
+      "style": "./dist/components/text/index.css",
+      "require": "./dist/components/text/index.js",
+      "import": "./dist/components/text/index.mjs"
     }
   },
   "keywords": [],
