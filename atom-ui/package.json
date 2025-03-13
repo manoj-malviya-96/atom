@@ -10,6 +10,14 @@
     "build": "tsup",
     "dev": "tsup --watch"
   },
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "style": "./dist/index.css",
+      "require": "./dist/index.js",
+      "import": "./dist/index.mjs"
+    }
+  },
   "keywords": [],
   "author": "",
   "license": "(MIT OR Apache-2.0)",
