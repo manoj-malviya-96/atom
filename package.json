@@ -1,0 +1,5 @@
+{
+  "name": "atom-monorepo",
+  "private": true,
+  "workspaces": ["atom-ui", "atom-doc"]
+}
