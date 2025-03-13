@@ -26,7 +26,7 @@ module.exports = __toCommonJS(index_exports);
 // src/components/text/hero.tsx
 var import_jsx_runtime = require("react/jsx-runtime");
 var HeroText = ({ style = "primary", children }) => {
-  return /* @__PURE__ */ (0, import_jsx_runtime.jsx)("h1", { className: `text-7xl bg-red-300 font-bold uppercase text-${style}`, children });
+  return /* @__PURE__ */ (0, import_jsx_runtime.jsx)("h1", { className: `text-info font-bold uppercase text-7xl`, children });
 };
 // Annotate the CommonJS export names for ESM import in node:
 0 && (module.exports = {

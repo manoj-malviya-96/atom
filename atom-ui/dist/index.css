@@ -226,6 +226,9 @@
     --tw-font-weight: var(--font-weight-bold);
     font-weight: var(--font-weight-bold);
   }
+  .text-info {
+    color: var(--color-info);
+  }
   .uppercase {
     text-transform: uppercase;
   }
