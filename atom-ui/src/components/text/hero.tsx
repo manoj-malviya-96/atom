@@ -6,9 +6,8 @@ interface TextProps {
 }
 
 
-const HeroText: FC<TextProps> = ({style = "primary", content}) => {
+export const HeroText: FC<TextProps> = ({style = "primary", content}) => {
 	return <h1 className={`text-7xl font-bold uppercase text-${style}`}>{content}</h1>;
 }
 
-export default HeroText;
 

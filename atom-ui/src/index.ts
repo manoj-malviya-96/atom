@@ -1,4 +1,4 @@
-import HeroText from "./components/text/hero";
+import '@/global.css';
 
+export {HeroText} from '@/components/text/hero'
 
-export { HeroText };
