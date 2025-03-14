@@ -17,6 +17,12 @@
       "require": "./dist/index.js",
       "import": "./dist/index.mjs"
     },
+    "./common": {
+      "types": "./dist/common/index.d.ts",
+      "style": "./dist/common/index.css",
+      "require": "./dist/common/index.js",
+      "import": "./dist/common/index.mjs"
+    },
     "./layout": {
       "types": "./dist/components/layout/index.d.ts",
       "style": "./dist/components/layout/index.css",

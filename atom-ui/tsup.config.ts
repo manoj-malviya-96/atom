@@ -1,8 +1,9 @@
-import { defineConfig } from 'tsup'
+import {defineConfig} from 'tsup'
 
 export default defineConfig({
 	entry: [
 		'src/index.ts',
+		'src/components/common/index.ts',
 		'src/components/layout/index.ts',
 		'src/components/text/index.ts',
 		'src/components/button/index.ts',
