@@ -1,6 +1,6 @@
 import {toSizeClass, toColorClass} from "@/components/button/utils";
 import React from "react";
-import {MotionScaleActive, ElementSize, ElementColor} from "@/components/common";
+import {MotionScaleActive, ElementSize, ElementColor, TransitionDurationTW} from "@/components/common";
 import {motion} from "motion/react";
 
 interface PrimaryButtonProps {
@@ -31,7 +31,8 @@ export const PrimaryButton: React.FC<PrimaryButtonProps> = ({
 	return (
 		<motion.button
 			className={`btn rounded-full
-						hover:shadow-lg transition duration-300
+						hover:shadow-lg transition
+						${TransitionDurationTW}
 						${toSizeClass(size)}
 						${toColorClass(color)}`}
 			onClick={onClick}
