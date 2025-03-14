@@ -4,10 +4,10 @@ import {toGap, toHAlign, toVAlign} from "@/components/layout/utils";
 
 
 interface RowProps extends HTMLAttributes<HTMLDivElement> {
-	spacing: Size;
-	hAlign: Location;
-	vAlign: Location;
-	smallDeviceWrap: "none" | "col" | "wrap"; //! If small device, make it column
+	spacing?: Size;
+	hAlign?: Location;
+	vAlign?: Location;
+	smallDeviceWrap?: "none" | "col" | "wrap"; //! If small device, make it column
 }
 
 

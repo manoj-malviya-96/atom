@@ -1,10 +1,9 @@
 "use client";
 
-import {Col} from "atom-ui/layout";
+import {Col, Row} from "atom-ui/layout";
 import {HeroText, Link} from "atom-ui/text";
 import React from "react";
-import {PrimaryButton} from "atom-ui/button";
-
+import {PrimaryButton, SecondaryButton} from "atom-ui/button";
 
 export default function Home() {
 	return (
@@ -13,7 +12,10 @@ export default function Home() {
 		>
 			<HeroText> Welcome to Atom </HeroText>
 			<Link href="https://www.google.com/maps">Google</Link>
-			<PrimaryButton label={"Primary"} onClick={() => console.log("clicked")}/>
+			<Row>
+				<PrimaryButton label={"Primary"} onClick={() => console.log("clicked")}/>
+				<SecondaryButton label={"Secondary"} onClick={() => console.log("clicked")}/>
+			</Row>
 		</Col>
 	);
 }

@@ -20,11 +20,9 @@ export function toSizeClass(size: Size): string {
 
 export function toStateClass(state: State): string {
 	switch (state) {
-		case State.Primary:
+		case State.Nominal:
 			return `btn-primary hover:btn-secondary active:btn-secondary
 			bg-opacity-50 hover:bg-opacity-100`;
-		case State.Secondary:
-			return `btn-secondary border-none`;
 		case State.Success:
 			return `btn-success border-none bg-opacity-100`;
 		case State.Info:
