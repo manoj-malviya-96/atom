@@ -4,7 +4,7 @@ import {Col, Row} from "atom-ui/layout";
 import {HeroText, Link} from "atom-ui/text";
 import React from "react";
 import {PrimaryButton, SecondaryButton} from "atom-ui/button";
-import {State} from "atom-ui";
+import {ElementColor} from "atom-ui";
 
 export default function Home() {
 	return (
@@ -21,17 +21,17 @@ export default function Home() {
 				<PrimaryButton
 					icon={"fas fa-trash"}
 					label={"Danger"}
-					state={State.Error}
+					color={ElementColor.Error}
 					onClick={() => console.log("clicked")}/>
 				<PrimaryButton
 					icon={"fas fa-warning"}
 					label={"Warning"}
-					state={State.Warning}
+					color={ElementColor.Warning}
 					onClick={() => console.log("clicked")}/>
 				<PrimaryButton
 					icon={"fas fa-check"}
 					label={"Success"}
-					state={State.Success}
+					color={ElementColor.Success}
 					onClick={() => console.log("clicked")}/>
 				<PrimaryButton
 					icon={"fas fa-info"}

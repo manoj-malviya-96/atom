@@ -1,11 +1,11 @@
-import {toSizeClass, toStateClass} from "@/components/button/utils";
+import {toSizeClass, toColorClass} from "@/components/button/utils";
 import React from "react";
 import {MotionScaleActive, ElementSize, ElementColor} from "@/components/common";
 import {motion} from "motion/react";
 
 interface PrimaryButtonProps {
 	size?: ElementSize;
-	state?: ElementColor;
+	color?: ElementColor;
 	disabled?: boolean;
 	loading?: boolean;
 	label?: string;
@@ -17,7 +17,7 @@ interface PrimaryButtonProps {
 
 export const PrimaryButton: React.FC<PrimaryButtonProps> = ({
 	                                                            size = ElementSize.Medium,
-	                                                            state = ElementColor.Nominal,
+	                                                            color = ElementColor.Nominal,
 	                                                            disabled = false,
 	                                                            loading = false,
 	                                                            label,
@@ -32,7 +32,7 @@ export const PrimaryButton: React.FC<PrimaryButtonProps> = ({
 		<motion.button
 			className={`btn hover:shadow-sm rounded-full
 						${toSizeClass(size)}
-						${toStateClass(state)}`}
+						${toColorClass(color)}`}
 			onClick={onClick}
 			disabled={disabled}
 			whileTap={{scale: MotionScaleActive}}

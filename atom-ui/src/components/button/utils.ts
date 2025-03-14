@@ -18,7 +18,7 @@ export function toSizeClass(size: ElementSize): string {
 }
 
 
-export function toStateClass(state: ElementColor): string {
+export function toColorClass(state: ElementColor): string {
 	switch (state) {
 		case ElementColor.Nominal:
 			return `btn-primary hover:btn-secondary active:btn-secondary
