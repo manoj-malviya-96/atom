@@ -3,7 +3,7 @@
 import {Col, Row} from "atom-ui/layout";
 import {HeroText, Link, PrimaryText, SecondaryText} from "atom-ui/text";
 import React from "react";
-import {PrimaryButton, SecondaryButton} from "atom-ui/button";
+import {PrimaryButton, SecondaryButton, ToggleButton} from "atom-ui/button";
 import {ElementColor} from "atom-ui";
 
 export default function Home() {
@@ -45,6 +45,12 @@ export default function Home() {
 					icon={"fas fa-minus"}
 					label={"Secondary"}
 					onClick={() => console.log("clicked")}/>
+				<ToggleButton
+					onIcon={"fas fa-check"}
+					offIcon={"fas fa-times"}
+					initValue={true}
+					onChange={(value: boolean) => console.log(value)}
+				/>
 			</Row>
 		</Col>
 	);

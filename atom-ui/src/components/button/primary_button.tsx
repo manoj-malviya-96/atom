@@ -15,7 +15,7 @@ interface PrimaryButtonProps {
 }
 
 
-export const PrimaryButton: React.FC<PrimaryButtonProps> = ({
+export const PrimaryButton: React.FC<PrimaryButtonProps> = React.memo(({
 	                                                            size = ElementSize.Medium,
 	                                                            color = ElementColor.Primary,
 	                                                            disabled = false,
@@ -45,6 +45,6 @@ export const PrimaryButton: React.FC<PrimaryButtonProps> = ({
 			{component}
 		</motion.button>
 	);
-}
+});
 
 export default PrimaryButton;

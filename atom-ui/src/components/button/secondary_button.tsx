@@ -15,7 +15,7 @@ interface SecondaryButtonProps {
 }
 
 
-export const SecondaryButton: React.FC<SecondaryButtonProps> = ({
+export const SecondaryButton: React.FC<SecondaryButtonProps> = React.memo(({
 	                                                                size = ElementSize.Medium,
 	                                                                disabled = false,
 	                                                                label,
@@ -41,6 +41,6 @@ export const SecondaryButton: React.FC<SecondaryButtonProps> = ({
 			{label}
 		</motion.button>
 	);
-}
+});
 
 export default SecondaryButton;
