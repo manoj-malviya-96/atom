@@ -2,7 +2,7 @@ import {toSizeClass, toStateClass} from "@/components/button/utils";
 import React from "react";
 import {Size, State} from "@/components/types";
 
-interface SolidButtonProps {
+interface PrimaryButtonProps {
 	size?: Size;
 	state?: State;
 	disabled?: boolean;
@@ -14,16 +14,16 @@ interface SolidButtonProps {
 }
 
 
-export const PrimaryButton: React.FC<SolidButtonProps> = ({
-	                                                   size = Size.Medium,
-	                                                   state = State.Nominal,
-	                                                   disabled = false,
-	                                                   loading = false,
-	                                                   label,
-	                                                   icon,
-	                                                   component,
-	                                                   onClick
-                                                   }) => {
+export const PrimaryButton: React.FC<PrimaryButtonProps> = ({
+	                                                            size = Size.Medium,
+	                                                            state = State.Nominal,
+	                                                            disabled = false,
+	                                                            loading = false,
+	                                                            label,
+	                                                            icon,
+	                                                            component,
+	                                                            onClick
+                                                            }) => {
 	return (
 		<button className={`btn
 						${toSizeClass(size)}
@@ -31,10 +31,10 @@ export const PrimaryButton: React.FC<SolidButtonProps> = ({
 		        onClick={onClick}
 		        disabled={disabled}
 		>
-		        {loading && <i className="fas fa-spinner fa-spin"/>}
-		        {icon && <i className={`${icon} mr-1`}/>}
-		        {label}
-		        {component}
+			{loading && <i className="fas fa-spinner fa-spin"/>}
+			{icon && <i className={`${icon} mr-1`}/>}
+			{label}
+			{component}
 		</button>
 	);
 }
