@@ -23,6 +23,8 @@ export const ToggleButton: React.FC<ToggleButtonProps> =
 				throw new Error("Button must have either label or icon");
 			}
 			
+			const isIconOnly = !onLabel || !offLabel;
+			
 			const [value, setValue] = React.useState<boolean>(!!initValue);
 			const handleToggle = () => {
 				setValue(!value);
@@ -33,9 +35,9 @@ export const ToggleButton: React.FC<ToggleButtonProps> =
 			
 			return (
 				<label
-					className={`btn
-								${TW_PrimaryBorderStyled} p-0
-								${toSizeClass(size)}
+					className={`btn rounded-full
+								${TW_PrimaryBorderStyled}
+								${toSizeClass(size, isIconOnly)}
 								${disabled ? "disabled" : ""}
 								swap swap-rotate`}
 				>
@@ -43,13 +45,13 @@ export const ToggleButton: React.FC<ToggleButtonProps> =
 					       checked={value}
 					       onChange={handleToggle}
 					/>
-					<span className="swap-on">
-						{onIcon && <i className={`${onIcon} mr-1`}/>}
+					<span className="swap-on flex flex-row gap-1">
+						{onIcon && <i className={onIcon}/>}
 						{onLabel}
 					</span>
 					
-					<span className="swap-off">
-						{offIcon && <i className={`${offIcon} mr-1`}/>}
+					<span className="swap-off flex flex-row gap-1">
+						{offIcon && <i className={offIcon}/>}
 						{offLabel}
 					</span>
 				</label>

@@ -33,7 +33,7 @@ export const PrimaryButton: React.FC<PrimaryButtonProps> = React.memo(({
 			className={`btn rounded-full
 						hover:shadow-lg transition
 						${TW_TransitionDuration}
-						${toSizeClass(size)}
+						${toSizeClass(size, !label)}
 						${toColorClass(color)}`}
 			onClick={onClick}
 			disabled={disabled}

@@ -1,20 +1,27 @@
 import {ElementColor, ElementSize} from "@/components/common/element";
 
-export function toSizeClass(size: ElementSize): string {
+export function toSizeClass(size: ElementSize, isIconOnly: boolean = false): string {
+	let result = "";
 	switch (size) {
 		case ElementSize.ExtraSmall:
-			return "btn-xs p-4";
+			result += "btn-xs p-4";
+			break;
 		case ElementSize.Small:
-			return "btn-sm p-4";
-		case ElementSize.Medium:
-			return "p-4";
+			result += "btn-sm p-4";
+			break;
 		case ElementSize.Large:
-			return "btn-lg p-4";
+			result += "btn-lg p-4";
+			break;
 		case ElementSize.ExtraLarge:
-			return "btn-xl p-4";
+			result += "btn-xl p-4";
+			break;
+		case ElementSize.Medium:
 		default:
-			return "p-4";
+			result += "p-4";
+			break;
 	}
+	result += isIconOnly ? " btn-circle" : "";
+	return result;
 }
 
 
