@@ -13,7 +13,7 @@ export default function Home() {
 		>
 			<HeroText> Welcome to Atom </HeroText>
 			<Link href="https://www.google.com/maps">Google</Link>
-			<Row>
+			<Row smallDeviceWrap="wrap">
 				<PrimaryButton
 					icon={"fas fa-plus"}
 					label={"Primary"}

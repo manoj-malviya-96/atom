@@ -29,5 +29,7 @@ export enum Box {
 	ViewPort // Fit to viewport
 }
 
+// Defaults
+export const MotionScaleActive = 0.95;
 
 

@@ -1,6 +1,7 @@
-import {toSizeClass, toStateClass} from "@/components/button/utils";
+import {toSizeClass} from "@/components/button/utils";
 import React from "react";
-import {Size, State} from "@/components/common";
+import {MotionScaleActive, Size} from "@/components/common";
+import {motion} from "motion/react";
 
 /*** In contrast to primary button, secondary button is used for secondary actions.
     So it doesn't need to have state, component and loading.
@@ -25,17 +26,20 @@ export const SecondaryButton: React.FC<SecondaryButtonProps> = ({
 		throw new Error("Button must have either label or icon");
 	}
 	return (
-		<button className={`btn
+		<motion.button
+			whileTap={{scale: MotionScaleActive}}
+			className={`btn
 						${toSizeClass(size)}
+						hover:shadow-sm rounded-full
 						bg-transparent hover:bg-primary hover:text-primary-content
 						border border-secondary border-opacity-50 hover:border-opacity-100`
-				}
-		        onClick={onClick}
-		        disabled={disabled}
+			}
+			onClick={onClick}
+			disabled={disabled}
 		>
 			{icon && <i className={`${icon} mr-1`}/>}
 			{label}
-		</button>
+		</motion.button>
 	);
 }
 

@@ -1,6 +1,7 @@
 import {toSizeClass, toStateClass} from "@/components/button/utils";
 import React from "react";
-import {Size, State} from "@/components/common";
+import {MotionScaleActive, Size, State} from "@/components/common";
+import {motion} from "motion/react";
 
 interface PrimaryButtonProps {
 	size?: Size;
@@ -28,18 +29,19 @@ export const PrimaryButton: React.FC<PrimaryButtonProps> = ({
 		throw new Error("Button must have either label or icon");
 	}
 	return (
-		<button className={`btn
-						inset-shadow-xs hover:inset-shadow-md rounded-full
+		<motion.button
+			className={`btn hover:shadow-sm rounded-full
 						${toSizeClass(size)}
 						${toStateClass(state)}`}
-		        onClick={onClick}
-		        disabled={disabled}
+			onClick={onClick}
+			disabled={disabled}
+			whileTap={{scale: MotionScaleActive}}
 		>
 			{loading && <i className="fas fa-spinner fa-spin"/>}
 			{icon && <i className={`${icon}`}/>}
 			{label}
 			{component}
-		</button>
+		</motion.button>
 	);
 }
 
