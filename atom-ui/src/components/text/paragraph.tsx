@@ -10,7 +10,7 @@ interface ParagraphProps {
 }
 
 
-export const Paragraph: React.FC<ParagraphProps> = ({color = ElementColor.Nominal, children, className}) => {
+export const Paragraph: React.FC<ParagraphProps> = ({color, children, className}) => {
 	return <p className={`text-wrap
 					${toTextColor(color)}
 					${className}`}>{children}</p>;

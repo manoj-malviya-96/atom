@@ -12,6 +12,7 @@ export function toTextColor(color: ElementColor) {
 			return "text-warning";
 		case ElementColor.Success:
 			return "text-success";
+		case ElementColor.Base:
 		default:
 			return "text-base-content";
 	}

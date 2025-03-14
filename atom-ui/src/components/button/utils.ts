@@ -1,4 +1,4 @@
-import {ElementSize, ElementColor} from "@/components/common/element";
+import {ElementColor, ElementSize} from "@/components/common/element";
 
 export function toSizeClass(size: ElementSize): string {
 	switch (size) {
@@ -20,6 +20,8 @@ export function toSizeClass(size: ElementSize): string {
 
 export function toColorClass(state: ElementColor): string {
 	switch (state) {
+		case ElementColor.Base:
+			return `btn-ghost border-none bg-opacity-100 shadow-base/20`;
 		case ElementColor.Nominal:
 			return `btn-primary hover:btn-secondary active:btn-secondary
 			bg-opacity-50 hover:bg-opacity-100 shadow-primary/20`;

@@ -8,6 +8,7 @@ export enum ElementSize {
 }
 
 export enum ElementColor {
+	Base,
 	Nominal,
 	Success,
 	Info,
