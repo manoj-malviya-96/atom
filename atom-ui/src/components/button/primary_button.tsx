@@ -1,6 +1,6 @@
 import {toSizeClass, toColorClass} from "@/components/button/utils";
 import React from "react";
-import {MotionScaleActive, ElementSize, ElementColor} from "@/components/common";
+import {MotionScaleActive, ElementSize, ElementColor} from "@/components/common/element";
 import {motion} from "motion/react";
 
 interface PrimaryButtonProps {

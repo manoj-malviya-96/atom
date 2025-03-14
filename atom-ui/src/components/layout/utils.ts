@@ -1,4 +1,4 @@
-import {ElementLocation, ElementSize} from "@/components/common";
+import {ElementLocation, ElementSize} from "@/components/common/element";
 
 
 export const toVAlign = (verticalAlignment: ElementLocation) => {

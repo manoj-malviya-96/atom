@@ -1,5 +1,5 @@
 import React, {HTMLAttributes} from "react";
-import {ElementSize, ElementLocation} from "@/components/common";
+import {ElementSize, ElementLocation} from "@/components/common/element";
 import {toGap, toHAlign, toVAlign} from "@/components/layout/utils";
 
 

@@ -1,4 +1,4 @@
-import {ElementSize, ElementColor} from "@/components/common";
+import {ElementSize, ElementColor} from "@/components/common/element";
 
 export function toSizeClass(size: ElementSize): string {
 	switch (size) {

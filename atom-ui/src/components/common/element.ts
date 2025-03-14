@@ -1,4 +1,3 @@
-import "@fortawesome/fontawesome-free/css/all.css";
 
 export enum ElementSize {
 	ExtraSmall,
@@ -28,8 +27,5 @@ export enum ElementBox {
 	Screen, // Fit to screen
 	ViewPort // Fit to viewport
 }
-
-// Defaults
-export const MotionScaleActive = 0.95;
 
 
