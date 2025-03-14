@@ -2,7 +2,7 @@ import React from "react";
 
 
 interface SecondaryTextProps {
-	children: string;
+	children: React.ReactNode;
 	className?: string;
 }
 

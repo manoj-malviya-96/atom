@@ -1,7 +1,7 @@
-import {FC} from "react";
+import React, {FC} from "react";
 
 interface HeroTextProps {
-	children: string;
+	children: React.ReactNode;
 	className?: string;
 }
 

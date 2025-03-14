@@ -2,7 +2,7 @@ import React from "react";
 
 interface LinkProps {
 	href: string;
-	children: string;
+	children: React.ReactNode;
 	className?: string;
 }
 
