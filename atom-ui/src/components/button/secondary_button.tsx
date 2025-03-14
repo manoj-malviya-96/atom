@@ -1,6 +1,6 @@
 import {toSizeClass} from "@/components/button/utils";
 import React from "react";
-import {MotionScaleActive, ElementSize} from "@/components/common/element";
+import {MotionScaleActive, ElementSize} from "@/components/common";
 import {motion} from "motion/react";
 
 /*** In contrast to primary button, secondary button is used for secondary actions.
