@@ -18,13 +18,9 @@ interface ToggleButtonProps {
 export const ToggleButton: React.FC<ToggleButtonProps> =
 	React.memo(
 		({size, disabled, onLabel, onIcon, offLabel, offIcon, initValue, onChange}) => {
-			
 			if (!onLabel && !onIcon) {
 				throw new Error("Button must have either label or icon");
 			}
-			
-			const isIconOnly = !onLabel || !offLabel;
-			
 			const [value, setValue] = React.useState<boolean>(!!initValue);
 			const handleToggle = () => {
 				setValue(!value);
@@ -37,7 +33,7 @@ export const ToggleButton: React.FC<ToggleButtonProps> =
 				<label
 					className={`btn rounded-full
 								${TW_PrimaryBorderStyled}
-								${toSizeClass(size, isIconOnly)}
+								${toSizeClass(size, !onLabel || !offLabel)}
 								${disabled ? "disabled" : ""}
 								swap swap-rotate`}
 				>
