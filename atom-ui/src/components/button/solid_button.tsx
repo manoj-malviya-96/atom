@@ -1,10 +1,20 @@
-import {ButtonProps, toSizeClass, toStateClass} from "@/components/button/utils";
+import {toSizeClass, toStateClass} from "@/components/button/utils";
 import React from "react";
 import {Size, State} from "@/components/types";
 
+interface SolidButtonProps {
+	size?: Size;
+	state?: State;
+	disabled?: boolean;
+	loading?: boolean;
+	label: string;
+	icon?: string;
+	component?: React.ReactNode;
+	onClick?: () => void;
+}
 
 
-export const SolidButton: React.FC<ButtonProps> = ({
+export const SolidButton: React.FC<SolidButtonProps> = ({
 	                                                   size = Size.Medium,
 	                                                   state = State.Primary,
 	                                                   disabled = false,
