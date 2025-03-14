@@ -14,9 +14,9 @@ interface SolidButtonProps {
 }
 
 
-export const SolidButton: React.FC<SolidButtonProps> = ({
+export const PrimaryButton: React.FC<SolidButtonProps> = ({
 	                                                   size = Size.Medium,
-	                                                   state = State.Primary,
+	                                                   state = State.Nominal,
 	                                                   disabled = false,
 	                                                   loading = false,
 	                                                   label,
@@ -39,4 +39,4 @@ export const SolidButton: React.FC<SolidButtonProps> = ({
 	);
 }
 
-export default SolidButton;
+export default PrimaryButton;

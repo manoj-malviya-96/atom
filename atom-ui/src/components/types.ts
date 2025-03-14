@@ -7,8 +7,7 @@ export enum Size {
 }
 
 export enum State {
-	Primary,
-	Secondary,
+	Nominal,
 	Success,
 	Info,
 	Warning,
