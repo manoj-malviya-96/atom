@@ -1,4 +1,4 @@
-import {HTMLAttributes} from "react";
+import React from "react";
 import {Size, State} from "@/components/types";
 
 export function toSizeClass(size: Size): string {
@@ -37,11 +37,13 @@ export function toStateClass(state: State): string {
 	}
 }
 
-export interface ButtonProps extends HTMLAttributes<HTMLButtonElement> {
-	bSize?: Size;
-	bStyle?: State;
+export interface ButtonProps {
+	size?: Size;
+	state?: State;
 	disabled?: boolean;
 	loading?: boolean;
 	label?: string;
 	icon?: string;
+	component?: React.ReactNode;
+	onClick: () => void;
 }
