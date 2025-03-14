@@ -1,16 +1,16 @@
-import {Size, State} from "@/components/common";
+import {ElementSize, ElementColor} from "@/components/common";
 
-export function toSizeClass(size: Size): string {
+export function toSizeClass(size: ElementSize): string {
 	switch (size) {
-		case Size.ExtraSmall:
+		case ElementSize.ExtraSmall:
 			return "btn-xs p-4";
-		case Size.Small:
+		case ElementSize.Small:
 			return "btn-sm p-4";
-		case Size.Medium:
+		case ElementSize.Medium:
 			return "p-4";
-		case Size.Large:
+		case ElementSize.Large:
 			return "btn-lg p-4";
-		case Size.ExtraLarge:
+		case ElementSize.ExtraLarge:
 			return "btn-xl p-4";
 		default:
 			return "p-4";
@@ -18,18 +18,18 @@ export function toSizeClass(size: Size): string {
 }
 
 
-export function toStateClass(state: State): string {
+export function toStateClass(state: ElementColor): string {
 	switch (state) {
-		case State.Nominal:
+		case ElementColor.Nominal:
 			return `btn-primary hover:btn-secondary active:btn-secondary
 			bg-opacity-50 hover:bg-opacity-100 shadow-primary`;
-		case State.Success:
+		case ElementColor.Success:
 			return `btn-success border-none bg-opacity-100 shadow-success`;
-		case State.Info:
+		case ElementColor.Info:
 			return `btn-info border-none bg-opacity-100 shadow-info`;
-		case State.Error:
+		case ElementColor.Error:
 			return `btn-error border-none bg-opacity-100 shadow-error`;
-		case State.Warning:
+		case ElementColor.Warning:
 			return `btn-warning border-none bg-opacity-100 shadow-warning`;
 	}
 }

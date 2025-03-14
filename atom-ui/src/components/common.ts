@@ -1,6 +1,6 @@
 import "@fortawesome/fontawesome-free/css/all.css";
 
-export enum Size {
+export enum ElementSize {
 	ExtraSmall,
 	Small,
 	Medium,
@@ -8,7 +8,7 @@ export enum Size {
 	ExtraLarge
 }
 
-export enum State {
+export enum ElementColor {
 	Nominal,
 	Success,
 	Info,
@@ -16,13 +16,13 @@ export enum State {
 	Error
 }
 
-export enum Location {
+export enum ElementLocation {
 	Start,
 	Center,
 	End
 }
 
-export enum Box {
+export enum ElementBox {
 	Fit, // Fit to content
 	Full, // Fit to parent
 	Screen, // Fit to screen

@@ -1,11 +1,11 @@
-import {Location, Size} from "@/components/common";
+import {ElementLocation, ElementSize} from "@/components/common";
 
 
-export const toVAlign = (verticalAlignment: Location) => {
+export const toVAlign = (verticalAlignment: ElementLocation) => {
 	switch (verticalAlignment) {
-		case Location.Start:
+		case ElementLocation.Start:
 			return "items-start";
-		case Location.End:
+		case ElementLocation.End:
 			return "items-end";
 		default:
 			return "items-center";
@@ -13,28 +13,28 @@ export const toVAlign = (verticalAlignment: Location) => {
 }
 
 
-export const toHAlign = (horizontalAlignment: Location) => {
+export const toHAlign = (horizontalAlignment: ElementLocation) => {
 	switch (horizontalAlignment) {
-		case Location.Start:
+		case ElementLocation.Start:
 			return "justify-start";
-		case Location.End:
+		case ElementLocation.End:
 			return "justify-end";
 		default:
 			return "justify-center";
 	}
 }
 
-export const toGap = (spacing: Size) => {
+export const toGap = (spacing: ElementSize) => {
 	switch (spacing) {
-		case Size.ExtraSmall:
+		case ElementSize.ExtraSmall:
 			return "gap-1";
-		case Size.Small:
+		case ElementSize.Small:
 			return "gap-2";
-		case Size.Medium:
+		case ElementSize.Medium:
 			return "gap-4";
-		case Size.Large:
+		case ElementSize.Large:
 			return "gap-8";
-		case Size.ExtraLarge:
+		case ElementSize.ExtraLarge:
 			return "gap-16";
 		default:
 			return "gap-4";

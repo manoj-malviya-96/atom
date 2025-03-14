@@ -1,11 +1,11 @@
 import {toSizeClass, toStateClass} from "@/components/button/utils";
 import React from "react";
-import {MotionScaleActive, Size, State} from "@/components/common";
+import {MotionScaleActive, ElementSize, ElementColor} from "@/components/common";
 import {motion} from "motion/react";
 
 interface PrimaryButtonProps {
-	size?: Size;
-	state?: State;
+	size?: ElementSize;
+	state?: ElementColor;
 	disabled?: boolean;
 	loading?: boolean;
 	label?: string;
@@ -16,8 +16,8 @@ interface PrimaryButtonProps {
 
 
 export const PrimaryButton: React.FC<PrimaryButtonProps> = ({
-	                                                            size = Size.Medium,
-	                                                            state = State.Nominal,
+	                                                            size = ElementSize.Medium,
+	                                                            state = ElementColor.Nominal,
 	                                                            disabled = false,
 	                                                            loading = false,
 	                                                            label,

@@ -1,12 +1,12 @@
 import React, {HTMLAttributes} from "react";
-import {Location, Size} from "@/components/common";
+import {ElementLocation, ElementSize} from "@/components/common";
 import {toGap, toHAlign, toVAlign} from "@/components/layout/utils";
 
 
 interface RowProps extends HTMLAttributes<HTMLDivElement> {
-	spacing?: Size;
-	hAlign?: Location;
-	vAlign?: Location;
+	spacing?: ElementSize;
+	hAlign?: ElementLocation;
+	vAlign?: ElementLocation;
 	smallDeviceWrap?: "none" | "col" | "wrap"; //! If small device, make it column
 }
 
@@ -14,9 +14,9 @@ interface RowProps extends HTMLAttributes<HTMLDivElement> {
 export const Row: React.FC<RowProps> = React.memo(
 	({
 		 children,
-		 spacing = Size.Medium,
-		 hAlign = Location.Center,
-		 vAlign = Location.Center,
+		 spacing = ElementSize.Medium,
+		 hAlign = ElementLocation.Center,
+		 vAlign = ElementLocation.Center,
 		 smallDeviceWrap = "none",
 		 className,
 		 ...props

@@ -1,13 +1,13 @@
 import {toSizeClass} from "@/components/button/utils";
 import React from "react";
-import {MotionScaleActive, Size} from "@/components/common";
+import {MotionScaleActive, ElementSize} from "@/components/common";
 import {motion} from "motion/react";
 
 /*** In contrast to primary button, secondary button is used for secondary actions.
     So it doesn't need to have state, component and loading.
  ***/
 interface SecondaryButtonProps {
-	size?: Size;
+	size?: ElementSize;
 	disabled?: boolean;
 	label?: string;
 	icon?: string;
@@ -16,7 +16,7 @@ interface SecondaryButtonProps {
 
 
 export const SecondaryButton: React.FC<SecondaryButtonProps> = ({
-	                                                                size = Size.Medium,
+	                                                                size = ElementSize.Medium,
 	                                                                disabled = false,
 	                                                                label,
 	                                                                icon,
