@@ -30,7 +30,8 @@ export const PrimaryButton: React.FC<PrimaryButtonProps> = ({
 	}
 	return (
 		<motion.button
-			className={`btn hover:shadow-sm rounded-full
+			className={`btn rounded-full
+						hover:shadow-lg transition duration-300
 						${toSizeClass(size)}
 						${toColorClass(color)}`}
 			onClick={onClick}

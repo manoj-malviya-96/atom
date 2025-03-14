@@ -22,14 +22,14 @@ export function toColorClass(state: ElementColor): string {
 	switch (state) {
 		case ElementColor.Nominal:
 			return `btn-primary hover:btn-secondary active:btn-secondary
-			bg-opacity-50 hover:bg-opacity-100 shadow-primary`;
+			bg-opacity-50 hover:bg-opacity-100 shadow-primary/20`;
 		case ElementColor.Success:
-			return `btn-success border-none bg-opacity-100 shadow-success`;
+			return `btn-success border-none bg-opacity-100 shadow-success/20`;
 		case ElementColor.Info:
-			return `btn-info border-none bg-opacity-100 shadow-info`;
+			return `btn-info border-none bg-opacity-100 shadow-info/20`;
 		case ElementColor.Error:
-			return `btn-error border-none bg-opacity-100 shadow-error`;
+			return `btn-error border-none bg-opacity-100 shadow-error/20`;
 		case ElementColor.Warning:
-			return `btn-warning border-none bg-opacity-100 shadow-warning`;
+			return `btn-warning border-none bg-opacity-100 shadow-warning/20`;
 	}
 }
