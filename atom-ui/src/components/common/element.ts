@@ -9,7 +9,8 @@ export enum ElementSize {
 
 export enum ElementColor {
 	Base,
-	Nominal,
+	Primary,
+	Secondary,
 	Success,
 	Info,
 	Warning,

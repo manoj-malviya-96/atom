@@ -1,7 +1,7 @@
 "use client";
 
 import {Col, Row} from "atom-ui/layout";
-import {HeroText, Link, Paragraph} from "atom-ui/text";
+import {HeroText, Link, PrimaryText, SecondaryText} from "atom-ui/text";
 import React from "react";
 import {PrimaryButton, SecondaryButton} from "atom-ui/button";
 import {ElementColor} from "atom-ui";
@@ -14,7 +14,8 @@ export default function Home() {
 			<HeroText> Welcome to Atom </HeroText>
 			<Row smallDeviceWrap="wrap">
 				<Link href="https://www.google.com/maps">Google</Link>
-				<Paragraph>Example Paragraph</Paragraph>
+				<PrimaryText>Primary Text</PrimaryText>
+				<SecondaryText>Secondary Text</SecondaryText>
 			</Row>
 			
 			<Row smallDeviceWrap="wrap">

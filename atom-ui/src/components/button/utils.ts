@@ -21,17 +21,17 @@ export function toSizeClass(size: ElementSize): string {
 export function toColorClass(state: ElementColor): string {
 	switch (state) {
 		case ElementColor.Base:
-			return `btn-ghost border-none bg-opacity-100 shadow-base/20`;
-		case ElementColor.Nominal:
-			return `btn-primary hover:btn-secondary active:btn-secondary
-			bg-opacity-50 hover:bg-opacity-100 shadow-primary/20`;
+			return `btn-ghost border-none shadow-base/20`;
+		case ElementColor.Primary:
+		case ElementColor.Secondary:
+			return `btn-primary hover:btn-secondary active:btn-secondary shadow-primary/20`;
 		case ElementColor.Success:
-			return `btn-success border-none bg-opacity-100 shadow-success/20`;
+			return `btn-success border-none shadow-success/20`;
 		case ElementColor.Info:
-			return `btn-info border-none bg-opacity-100 shadow-info/20`;
+			return `btn-info border-none shadow-info/20`;
 		case ElementColor.Error:
-			return `btn-error border-none bg-opacity-100 shadow-error/20`;
+			return `btn-error border-none shadow-error/20`;
 		case ElementColor.Warning:
-			return `btn-warning border-none bg-opacity-100 shadow-warning/20`;
+			return `btn-warning border-none shadow-warning/20`;
 	}
 }

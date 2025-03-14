@@ -17,7 +17,7 @@ interface PrimaryButtonProps {
 
 export const PrimaryButton: React.FC<PrimaryButtonProps> = ({
 	                                                            size = ElementSize.Medium,
-	                                                            color = ElementColor.Nominal,
+	                                                            color = ElementColor.Primary,
 	                                                            disabled = false,
 	                                                            loading = false,
 	                                                            label,
