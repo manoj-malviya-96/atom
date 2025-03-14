@@ -1,10 +1,10 @@
 import React, {HTMLAttributes} from "react";
-import {Spacing, Location} from "@/components/types";
+import {Size, Location} from "@/components/types";
 import {toGap, toHAlign, toVAlign} from "@/components/layout/utils";
 
 
 interface ColProps extends HTMLAttributes<HTMLDivElement> {
-	spacing?: Spacing;
+	spacing?: Size;
 	hAlign?: Location;
 	vAlign?: Location;
 }
@@ -12,7 +12,7 @@ interface ColProps extends HTMLAttributes<HTMLDivElement> {
 export const Col: React.FC<ColProps> = React.memo(
 	({
 		 children,
-		 spacing = Spacing.Medium,
+		 spacing = Size.Medium,
 		 hAlign = Location.Center,
 		 vAlign = Location.Center,
 		 className,

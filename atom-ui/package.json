@@ -28,6 +28,12 @@
       "style": "./dist/components/text/index.css",
       "require": "./dist/components/text/index.js",
       "import": "./dist/components/text/index.mjs"
+    },
+    "./button": {
+      "types": "./dist/components/button/index.d.ts",
+      "style": "./dist/components/button/index.css",
+      "require": "./dist/components/button/index.js",
+      "import": "./dist/components/button/index.mjs"
     }
   },
   "keywords": [],

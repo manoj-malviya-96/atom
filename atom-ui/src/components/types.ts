@@ -1,4 +1,4 @@
-export enum Spacing {
+export enum Size {
 	ExtraSmall,
 	Small,
 	Medium,
@@ -21,7 +21,7 @@ export enum Location {
 	End
 }
 
-export enum Sizing {
+export enum Box {
 	Fit, // Fit to content
 	Full, // Fit to parent
 	Screen, // Fit to screen

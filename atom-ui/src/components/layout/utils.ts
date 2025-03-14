@@ -1,4 +1,4 @@
-import {Location, Spacing} from "@/components/types";
+import {Location, Size} from "@/components/types";
 
 
 export const toVAlign = (verticalAlignment: Location) => {
@@ -24,17 +24,17 @@ export const toHAlign = (horizontalAlignment: Location) => {
 	}
 }
 
-export const toGap = (spacing: Spacing) => {
+export const toGap = (spacing: Size) => {
 	switch (spacing) {
-		case Spacing.ExtraSmall:
+		case Size.ExtraSmall:
 			return "gap-2";
-		case Spacing.Small:
+		case Size.Small:
 			return "gap-4";
-		case Spacing.Medium:
+		case Size.Medium:
 			return "gap-8";
-		case Spacing.Large:
+		case Size.Large:
 			return "gap-16";
-		case Spacing.ExtraLarge:
+		case Size.ExtraLarge:
 			return "gap-32";
 		default:
 			return "gap-4";
