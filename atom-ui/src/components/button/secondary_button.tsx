@@ -30,7 +30,7 @@ export const SecondaryButton: React.FC<SecondaryButtonProps> = React.memo(({
 			whileTap={{scale: MotionScaleActive}}
 			className={`btn
 						${toSizeClass(size)}
-						rounded-full bg-transparent
+						rounded-full
 						${TW_PrimaryBorderStyled} ${TW_TransitionDuration}`
 			}
 			onClick={onClick}
