@@ -31,7 +31,7 @@ export function toColorClass(state: ElementColor): string {
 			return `btn-ghost border-none shadow-base/20`;
 		case ElementColor.Primary:
 		case ElementColor.Secondary:
-			return `btn-primary hover:btn-secondary active:btn-secondary shadow-primary/20`;
+			return `btn-primary border-none shadow-primary/20`;
 		case ElementColor.Success:
 			return `btn-success border-none shadow-success/20`;
 		case ElementColor.Info:
