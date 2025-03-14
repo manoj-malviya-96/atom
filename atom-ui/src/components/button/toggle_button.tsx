@@ -1,4 +1,4 @@
-import {ElementSize} from "@/components/common";
+import {ElementSize, TW_PrimaryBorderStyled} from "@/components/common";
 import React, {useEffect} from "react";
 import {toSizeClass} from "@/components/button/utils";
 
@@ -34,6 +34,7 @@ export const ToggleButton: React.FC<ToggleButtonProps> =
 			return (
 				<label
 					className={`btn
+								${TW_PrimaryBorderStyled} p-0
 								${toSizeClass(size)}
 								${disabled ? "disabled" : ""}
 								swap swap-rotate`}

@@ -1,6 +1,6 @@
 import {toSizeClass} from "@/components/button/utils";
 import React from "react";
-import {MotionScaleActive, ElementSize} from "@/components/common";
+import {MotionScaleActive, ElementSize, TW_TransitionDuration, TW_PrimaryBorderStyled} from "@/components/common";
 import {motion} from "motion/react";
 
 /*** In contrast to primary button, secondary button is used for secondary actions.
@@ -16,12 +16,12 @@ interface SecondaryButtonProps {
 
 
 export const SecondaryButton: React.FC<SecondaryButtonProps> = React.memo(({
-	                                                                size = ElementSize.Medium,
-	                                                                disabled = false,
-	                                                                label,
-	                                                                icon,
-	                                                                onClick
-                                                                }) => {
+	                                                                           size = ElementSize.Medium,
+	                                                                           disabled = false,
+	                                                                           label,
+	                                                                           icon,
+	                                                                           onClick
+                                                                           }) => {
 	if (!label && !icon) {
 		throw new Error("Button must have either label or icon");
 	}
@@ -30,9 +30,8 @@ export const SecondaryButton: React.FC<SecondaryButtonProps> = React.memo(({
 			whileTap={{scale: MotionScaleActive}}
 			className={`btn
 						${toSizeClass(size)}
-						hover:shadow-sm rounded-full
-						bg-transparent hover:bg-primary hover:text-primary-content
-						border border-secondary border-opacity-50 hover:border-opacity-100`
+						rounded-full bg-transparent
+						${TW_PrimaryBorderStyled} ${TW_TransitionDuration}`
 			}
 			onClick={onClick}
 			disabled={disabled}
