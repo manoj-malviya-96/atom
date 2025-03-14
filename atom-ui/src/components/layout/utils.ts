@@ -27,15 +27,15 @@ export const toHAlign = (horizontalAlignment: Location) => {
 export const toGap = (spacing: Size) => {
 	switch (spacing) {
 		case Size.ExtraSmall:
-			return "gap-2";
+			return "gap-1";
 		case Size.Small:
-			return "gap-4";
+			return "gap-2";
 		case Size.Medium:
-			return "gap-8";
+			return "gap-4";
 		case Size.Large:
-			return "gap-16";
+			return "gap-8";
 		case Size.ExtraLarge:
-			return "gap-32";
+			return "gap-16";
 		default:
 			return "gap-4";
 	}
