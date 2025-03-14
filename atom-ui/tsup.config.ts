@@ -4,7 +4,8 @@ export default defineConfig({
 	entry: [
 		'src/index.ts',
 		'src/components/layout/index.ts',
-		'src/components/text/index.ts'
+		'src/components/text/index.ts',
+		'src/components/button/index.ts',
 	],
 	outDir: 'dist',
 	format: ['esm', 'cjs'],
