@@ -13,8 +13,14 @@ export default function Home() {
 			<HeroText> Welcome to Atom </HeroText>
 			<Link href="https://www.google.com/maps">Google</Link>
 			<Row>
-				<PrimaryButton label={"Primary"} onClick={() => console.log("clicked")}/>
-				<SecondaryButton label={"Secondary"} onClick={() => console.log("clicked")}/>
+				<PrimaryButton
+					icon={"fas fa-plus"}
+					label={"Primary"}
+					onClick={() => console.log("clicked")}/>
+				<SecondaryButton
+					icon={"fas fa-minus"}
+					label={"Secondary"}
+					onClick={() => console.log("clicked")}/>
 			</Row>
 		</Col>
 	);

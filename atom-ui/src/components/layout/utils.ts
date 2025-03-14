@@ -1,4 +1,4 @@
-import {Location, Size} from "@/components/types";
+import {Location, Size} from "@/components/common";
 
 
 export const toVAlign = (verticalAlignment: Location) => {

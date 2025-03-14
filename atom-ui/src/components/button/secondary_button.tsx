@@ -1,6 +1,6 @@
 import {toSizeClass, toStateClass} from "@/components/button/utils";
 import React from "react";
-import {Size, State} from "@/components/types";
+import {Size, State} from "@/components/common";
 
 /*** In contrast to primary button, secondary button is used for secondary actions.
     So it doesn't need to have state, component and loading.
@@ -24,7 +24,8 @@ export const SecondaryButton: React.FC<SecondaryButtonProps> = ({
 	return (
 		<button className={`btn
 						${toSizeClass(size)}
-						btn-outline border-primary border-opacity-50 hover:border-opacity-100`}
+						bg-transparent bg-opacity-0 hover:bg-opacity-100
+						border border-secondary border-opacity-50 hover:border-opacity-100`}
 		        onClick={onClick}
 		        disabled={disabled}
 		>

@@ -1,3 +1,6 @@
+
+import "@fortawesome/fontawesome-free/css/all.css";
+
 export enum Size {
 	ExtraSmall,
 	Small,

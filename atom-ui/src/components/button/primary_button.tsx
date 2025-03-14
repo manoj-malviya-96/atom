@@ -1,6 +1,6 @@
 import {toSizeClass, toStateClass} from "@/components/button/utils";
 import React from "react";
-import {Size, State} from "@/components/types";
+import {Size, State} from "@/components/common";
 
 interface PrimaryButtonProps {
 	size?: Size;

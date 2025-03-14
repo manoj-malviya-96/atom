@@ -1,4 +1,4 @@
-import {Size, State} from "@/components/types";
+import {Size, State} from "@/components/common";
 
 export function toSizeClass(size: Size): string {
 	switch (size) {
