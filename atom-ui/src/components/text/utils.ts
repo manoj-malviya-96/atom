@@ -1,6 +1,14 @@
+import {ElementColor} from "@/components/common";
 
-
-export interface TextProps {
-	state?: "primary" | "secondary" | "accent" | "white" | "black";
-	children: string;
+export function toTextColor(color: ElementColor) {
+	switch (color) {
+		case ElementColor.Nominal:
+			return "text-primary-content";
+		case ElementColor.Error:
+			return "text-error";
+		case ElementColor.Warning:
+			return "text-warning";
+		case ElementColor.Success:
+			return "text-success";
+	}
 }
