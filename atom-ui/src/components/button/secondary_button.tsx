@@ -8,7 +8,7 @@ import {Size, State} from "@/components/common";
 interface SecondaryButtonProps {
 	size?: Size;
 	disabled?: boolean;
-	label: string;
+	label?: string;
 	icon?: string;
 	onClick?: () => void;
 }
@@ -21,11 +21,15 @@ export const SecondaryButton: React.FC<SecondaryButtonProps> = ({
 	                                                                icon,
 	                                                                onClick
                                                                 }) => {
+	if (!label && !icon) {
+		throw new Error("Button must have either label or icon");
+	}
 	return (
 		<button className={`btn
 						${toSizeClass(size)}
-						bg-transparent bg-opacity-0 hover:bg-opacity-100
-						border border-secondary border-opacity-50 hover:border-opacity-100`}
+						bg-transparent hover:bg-primary hover:text-primary-content
+						border border-secondary border-opacity-50 hover:border-opacity-100`
+				}
 		        onClick={onClick}
 		        disabled={disabled}
 		>

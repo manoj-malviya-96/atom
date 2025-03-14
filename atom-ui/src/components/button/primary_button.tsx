@@ -7,7 +7,7 @@ interface PrimaryButtonProps {
 	state?: State;
 	disabled?: boolean;
 	loading?: boolean;
-	label: string;
+	label?: string;
 	icon?: string;
 	component?: React.ReactNode;
 	onClick?: () => void;
@@ -24,15 +24,19 @@ export const PrimaryButton: React.FC<PrimaryButtonProps> = ({
 	                                                            component,
 	                                                            onClick
                                                             }) => {
+	if (!label && !icon) {
+		throw new Error("Button must have either label or icon");
+	}
 	return (
 		<button className={`btn
+						inset-shadow-xs hover:inset-shadow-md rounded-full
 						${toSizeClass(size)}
 						${toStateClass(state)}`}
 		        onClick={onClick}
 		        disabled={disabled}
 		>
 			{loading && <i className="fas fa-spinner fa-spin"/>}
-			{icon && <i className={`${icon} mr-1`}/>}
+			{icon && <i className={`${icon}`}/>}
 			{label}
 			{component}
 		</button>
