@@ -7,4 +7,5 @@ export const TransitionDuration_ms = 100
 
 // TW = TailwindCSS classes
 export const TW_TransitionDuration = 'duration-100'
-export const TW_PrimaryBorderStyled = 'bg-primary/3 border-primary/30 border hover:border-primary transition'
+export const TW_PrimaryBorder = 'bg-primary/3 border-primary/7 border'
+export const TW_PrimaryBorderWithHover = 'bg-primary/3 border-primary/30 border hover:border-primary transition'

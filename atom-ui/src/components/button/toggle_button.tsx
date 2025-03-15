@@ -1,4 +1,4 @@
-import {ElementSize, TW_PrimaryBorderStyled} from "@/components/common";
+import {ElementSize, TW_PrimaryBorderWithHover} from "@/components/common";
 import React, {useEffect} from "react";
 import {toSizeClass} from "@/components/button/utils";
 
@@ -32,7 +32,7 @@ export const ToggleButton: React.FC<ToggleButtonProps> =
 			return (
 				<label
 					className={`btn rounded-full
-								${TW_PrimaryBorderStyled}
+								${TW_PrimaryBorderWithHover}
 								${toSizeClass(size, !onLabel || !offLabel)}
 								${disabled ? "disabled" : ""}
 								swap swap-rotate`}

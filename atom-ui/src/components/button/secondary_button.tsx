@@ -1,6 +1,6 @@
 import {toSizeClass} from "@/components/button/utils";
 import React from "react";
-import {MotionScaleActive, ElementSize, TW_TransitionDuration, TW_PrimaryBorderStyled} from "@/components/common";
+import {MotionScaleActive, ElementSize, TW_TransitionDuration, TW_PrimaryBorderWithHover} from "@/components/common";
 import {motion} from "motion/react";
 
 /*** In contrast to primary button, secondary button is used for secondary actions.
@@ -31,7 +31,7 @@ export const SecondaryButton: React.FC<SecondaryButtonProps> = React.memo(({
 			className={`btn
 						${toSizeClass(size, !label)}
 						rounded-full
-						${TW_PrimaryBorderStyled} ${TW_TransitionDuration}`
+						${TW_PrimaryBorderWithHover} ${TW_TransitionDuration}`
 			}
 			onClick={onClick}
 			disabled={disabled}
